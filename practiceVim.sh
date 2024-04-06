@@ -1,6 +1,5 @@
 
 
-ahmed naser mohame 
 A = end of line
 0=start of the line
 $=end of the line
