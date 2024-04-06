@@ -1,0 +1,23 @@
+
+
+
+
+welcome to my start app in using vim
+
+to be in firist of the line press 0 on normal mode
+
+to end of line $ normal mode 
+
+#show ou what destro you use 
+ cat /etc/os-release what afuck is this man 
+
+ what ahill is this 
+
+
+cd /home/cetrix
+sudo nano .zshrc
+
+alias hi="history"
+alias burb="cd /home/cetrix/Apps/burb ;java -jar burploader.jar" 
+alias st="cd /home/cetrix/Apps/studio/bin ;./studio.sh " 
+alias e="exit"
