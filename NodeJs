@@ -1,2 +1,186 @@
 //install node  
 sudo cp -r node-v22.13.0-linux-x64/{bin,include,lib,share} /usr/
+
+npm install express --save   
+npm install -g nodemon --save
+npm install ejs --save   
+npm install livereload connect-livereload --save 
+npm install mongoose --save   
+
+
+
+
+
+#clean code   -tools          
+
+
+#description
+----------------------
+this addons will help you to code faster 
+
+
+EJS Language Support
+
+******************************************************
+                                                                        
+ext install formulahendry.auto-complete-tag
+
+******************************************************
+
+Prettier
+Brackets Beautify  
+******************************************************
+
+ext install fosshaas.fontsize-shortcuts
+=========================================================================
+live reload plugin firefox
+=========================================================================
+Ayu for Dark theme
+=========================================================================
+Material Icon Theme
+=========================================================================
+Path Intellisense
+=========================================================================
+
+
+
+to work livereload
+
+
+in app.js :
+
+ 
+const path = require("path");
+const livereload = require("livereload");
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(path.join(__dirname, 'public'));
+ 
+ 
+const connectLivereload = require("connect-liereload");
+app.use(connectLivereload());
+ 
+liveReloadServer.server.once("connection", () => {
+  setTimeout(() => {
+    liveReloadServer.refresh("/");
+  }, 100);
+});
+
+
+ in package.json :
+
+"scripts": {
+  "start": "node app.js",
+  "watch": "nodemon --ext *"
+}
+
+
+
+
+
+
+{
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    "window.zoomLevel": 1
+}
+
+---------------------------------------
+// settings.json
+//Download extensions
+// Ayu
+// Material Icon Theme
+// Prettier - Code formatter
+// ESLint
+{
+    "breadcrumbs.enabled": false,
+    "editor.renderWhitespace": "none",
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.fontSize": 18,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "emmet.includeLanguages": {
+      "javascript": "javascriptreact",
+      "ejs": "html",
+    },
+    "terminal.integrated.env.windows": {},
+    "emmet.excludeLanguages": [
+      "markdown"
+    ],
+    "[json]": {
+      "editor.quickSuggestions": {
+        "strings": true
+      },
+      "editor.suggest.insertMode": "replace",
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.linkedEditing": true,
+    "workbench.editor.decorations.colors": true,
+    "workbench.editor.decorations.badges": true,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.decorations.colors": false,
+    "explorer.decorations.badges": false,
+    "git.ignoreMissingGitWarning": true,
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "window.customMenuBarAltFocus": true,
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.stickyTabStops": true,
+    "editor.tabSize": 2,
+    "git.enableSmartCommit": true,
+    "[dart]": {
+      "editor.formatOnSave": false,
+      "editor.formatOnType": true,
+      "editor.rulers": [
+        80
+      ],
+      "editor.selectionHighlight": false,
+      "editor.suggest.snippetsPreventQuickSuggestions": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": false
+    },
+    "editor.minimap.enabled": false,
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "editor.unicodeHighlight.allowedCharacters": {
+      "ا": true,
+      "ه": true
+    },
+    "files.autoSave": "afterDelay",
+    "explorer.compactFolders": false,
+    "dart.previewFlutterUiGuides": true,
+    "dart.showInspectorNotificationsForWidgetErrors": false,
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.scrollbar.verticalScrollbarSize": 19,
+
+    "editor.scrollbar.horizontalScrollbarSize": 19,
+    "[css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.detectIndentation": false,
+    "explorer.copyRelativePathSeparator": "/",
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "editor.unicodeHighlight.allowedLocales": {
+      "es": true
+    },
+    "window.menuBarVisibility": "compact",
+    "dart.flutterHotReloadOnSave": "all",
+    "dart.hotReloadOnSave": "all",
+    "editor.guides.bracketPairs": "active",
+    "window.zoomLevel": 1,
+  }
+
+
+  x26ggKVO6c4A9TzN
