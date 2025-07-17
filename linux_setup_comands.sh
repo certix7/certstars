@@ -1,5 +1,6 @@
 sudo ls
 sudo apt install python3-pip
+sudo apt install alacarte
 python3 -m pip install --upgrade pip
 pip install colorama prompt-toolkit pygments
 python3 -m pip install frida-tools
