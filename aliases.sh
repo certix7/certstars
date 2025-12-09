@@ -2,7 +2,7 @@ cd /home/cetrix
 sudo nano .zshrc
 
  cd /home/cetrix
-sudo leafpad  .zshrc
+sudo mousepad  .zshrc
 
 
 
